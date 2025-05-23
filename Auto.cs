@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ordinario
 {
-    internal class Auto
+    internal class Auto : Vehiculo
     {
+        public Auto(int id, string marca, string modelo, int anio, string color, double precio, string estado)
+               : base(id, marca, modelo, anio, color)
+        {
+            Precio = precio;
+            Estado = estado;
+        }
+
+        public Auto() { }
+
+        public double Precio { get; set; }
+        public string Estado { get; set; }
     }
 }
