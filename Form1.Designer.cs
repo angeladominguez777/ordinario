@@ -50,6 +50,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Suma = new System.Windows.Forms.Button();
+            this.elem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listaautos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,11 +245,33 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "Estado";
             // 
+            // Suma
+            // 
+            this.Suma.Location = new System.Drawing.Point(523, 393);
+            this.Suma.Name = "Suma";
+            this.Suma.Size = new System.Drawing.Size(88, 30);
+            this.Suma.TabIndex = 22;
+            this.Suma.Text = "Total";
+            this.Suma.UseVisualStyleBackColor = true;
+            this.Suma.Click += new System.EventHandler(this.Suma_Click);
+            // 
+            // elem
+            // 
+            this.elem.Location = new System.Drawing.Point(651, 395);
+            this.elem.Name = "elem";
+            this.elem.Size = new System.Drawing.Size(96, 27);
+            this.elem.TabIndex = 23;
+            this.elem.Text = "Elementos";
+            this.elem.UseVisualStyleBackColor = true;
+            this.elem.Click += new System.EventHandler(this.elem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.elem);
+            this.Controls.Add(this.Suma);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -302,6 +326,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Suma;
+        private System.Windows.Forms.Button elem;
     }
 }
 

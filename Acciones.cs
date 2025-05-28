@@ -11,6 +11,7 @@ namespace ordinario
     internal class Acciones : IAcciones
     {
         Auto a = new Auto();
+        Auto[] auto;
         private List<Auto> listaautos = new List<Auto>()
         {
             new Auto(1,"Tesla","Model 3",2025,"Rojo",500000,"Disponible")
@@ -175,6 +176,19 @@ namespace ordinario
                 correo.EnviarCorreo(ex.ToString());
                 return false;
             }
+        }
+        public int TotalElementos() 
+        {
+           return auto.Length;
+        }
+        public void TotalSuma()
+        {
+            double sumarprecios = 0;
+            foreach (var aut in auto)
+            {
+                sumarprecios = sumarprecios + aut.Precio;
+            }
+            Console.WriteLine($"La suma de los precios es: {sumarprecios}");
         }
     }
 }

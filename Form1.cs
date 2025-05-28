@@ -117,5 +117,17 @@ namespace ordinario
             estado.Text = "";
 
         }
+
+        private void elem_Click(object sender, EventArgs e)
+        {
+            listaautos.DataSource = acc.TotalElementos();
+
+        }
+
+        private void Suma_Click(object sender, EventArgs e)
+        {
+            acc.TotalSuma();
+            
+        }
     }
 }
